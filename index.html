@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -113,10 +115,34 @@
         </div>
     </div>
 
+    <header>
+        <div class="section-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="left-said">
+                            <div class="text">
+                                Umumta’lim fanlari bo’yicha
+                                sertifikatlash va bilim darajasini
+                                baholashning milliy test tizimi
+                            </div>
+                            <a href="">Batafsil</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right-said">
+                        <div class="owl-carousel owl-theme" id="myCarousel">
+                            <img src="./images/header-img.png" alt="">
+                            <img src="./images/header-img.png" alt="">
+                            <img src="./images/header-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
 
-
-    <div class="modal" id="myModal">
+        <div class="modal" id="myModal">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="card-header">
@@ -128,9 +154,26 @@
     </div>
 
 
-
     <script src="./js/jquery.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./js/bootstrap.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script>
+        $('#myCarousel').owlCarousel({
+            loop:true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        })
+    </script>
 </body>
 </html>
